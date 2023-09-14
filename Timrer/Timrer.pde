@@ -1,5 +1,6 @@
 //Global Variables
 int appWidth, appHeight;
+Boolean windowActivated = false;
 //
 void setup () {
   size(500, 600);
@@ -12,9 +13,14 @@ void setup () {
   if(appHeight>displayHeight) appHeight=displayHeight;
 } //End Steup
 //
-void draw() {} //End Draw
+void draw() {
+  if () splshScreen();
+} //End Draw
 //
-void mousePressed() {} //End mousePressed
+void mousePressed() {
+  //first mouse click, activates WINDOW
+  windowActivated = true;
+} //End mousePressed
 //
 void keyPressed( ) {} //End keyPressed
 //
