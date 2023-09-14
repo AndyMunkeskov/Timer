@@ -6,6 +6,10 @@ void setup () {
   appWidth = width;
   appHeight = height;
   println("Display Width", displayWidth,"Display Height", displayHeight );
+  println("App Width", appWidth, "App Height", appHeight);
+  //
+  if(appWidth>displayWidth) appWidth=displayWidth;
+  if(appHeight>displayHeight) appHeight=displayHeight;
 } //End Steup
 //
 void draw() {} //End Draw
