@@ -1,6 +1,12 @@
 //Global Variables
+int appWidth, appHeight;
 //
-void setup () {} //End Steup
+void setup () {
+  size(500, 600);
+  appWidth = width;
+  appHeight = height;
+  println("Display Width", displayWidth,"Display Height", displayHeight );
+} //End Steup
 //
 void draw() {} //End Draw
 //
