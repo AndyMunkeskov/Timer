@@ -5,7 +5,7 @@ void splashScreen() {
 }
 //
 void draw() {
-  if () splshScreen();
+  splashScreen();
 } //End Draw
 //
 void mousePressed() {
