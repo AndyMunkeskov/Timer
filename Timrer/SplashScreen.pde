@@ -4,15 +4,4 @@ void splashScreen() {
   //
 }
 //
-void draw() {
-  splashScreen();
-} //End Draw
-//
-void mousePressed() {
-  //first mouse click, activates WINDOW
-  windowActivated = true;
-} //End mousePressed
-//
-void keyPressed( ) {} //End keyPressed
-//
 //End MAIN Program
