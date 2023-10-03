@@ -10,3 +10,4 @@ int alignX, alignY;
 String text;
 char a;
 float title, titleX, titleY, titleWidth, titleHeight;
+boolean splash = false;
