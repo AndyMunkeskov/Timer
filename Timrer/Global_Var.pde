@@ -9,4 +9,4 @@ color ink;
 int alignX, alignY;
 String text;
 char a;
-int title, titleX, titleY, titleWidth, titleHeight;
+float title, titleX, titleY, titleWidth, titleHeight;

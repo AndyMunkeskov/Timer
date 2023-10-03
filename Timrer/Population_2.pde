@@ -7,12 +7,11 @@ void population() {
   if ( widthSquare*7 <= appHeight ) {
     //println("true");
     //Empty if
-  
-    }else {
+  } else {
     println("false");
-      widthSquare = heightSquare = appHeight*1/7;
-      border = appWidth*1/4; 
-      border = border*1/2;
+    widthSquare = heightSquare = appHeight*1/7;
+    border = appWidth*1/4;
+    border = border*1/2;
   } //End Height Error Check
   //
   // Writing X&Y rect() Varibles

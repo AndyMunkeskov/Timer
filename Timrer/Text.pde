@@ -20,7 +20,7 @@ void textDraw( color ink, int alignX, int alignY, PFont font, String text, float
 }//End Text Draw
 //
 float textCalculator(float size, float rectWidth, String text ) {
-   size = appWidth;
+  size = appWidth;
   textSize( size);
   while ( textWidth( a ) >= rectWidth ) {
     size = size * 0.99;

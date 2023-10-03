@@ -4,21 +4,22 @@ Boolean windowActivated = false;
 void setup () {
   size(400, 700);
   display();
+  splashScreen();
   println("Display Width", displayWidth, "Display Height", displayHeight );
   println("App Width", appWidth, "App Height", appHeight);
   //
   if (appWidth>displayWidth) appWidth=displayWidth;
   if (appHeight>displayHeight) appHeight=displayHeight;
   //
-    population(); //rect() variables
+  population(); //rect() variables
   textSetup();
   background( #4411BC );
 } //End Steup
 //
 void draw() {
-textDraw( purple, CENTER, CENTER, font, title, titleX, titleY, titleWidth, titleHeight );
-numPadRects();  
-splashScreen();
+  String one="1";
+  textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
+  numPadRects();
 } //End Draw
 //
 void mousePressed() {
@@ -73,9 +74,9 @@ void mousePressed() {
         println("Button #:", i+9);
       }
     }
-  } //End mousePressed
-  //
-  void keyPressed( ) {
-  } //End keyPressed
-  //
-  //End MAIN Program
+} //End mousePressed
+//
+void keyPressed( ) {
+} //End keyPressed
+//
+//End MAIN Program
