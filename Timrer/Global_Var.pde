@@ -14,3 +14,6 @@ boolean splash = false;
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float PineX, PineY, PineHegiht, PineWidth;
 float seaX, seaY, seaWidth, seaHeight;
+PImage backgroundPic, pinePic, seaPic;
+Boolean nightmode, brightnessControl; //Uses tint()
+int brightnessNumber=128; //Range: 1-255

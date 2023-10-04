@@ -15,9 +15,11 @@ void setup () {
   textSetup();
   background( #4411BC );
   //
+  noStroke();
   rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  rect(PineX, PineY, PineHegiht, PineWidth); //Landscape geometry
-  rect(seaX, seaY, seaWidth, seaHeight); //Portrait geometry
+  //rect(PineX, PineY, PineHegiht, PineWidth); //Landscape geometry
+  //rect(seaX, seaY, seaWidth, seaHeight); //Portrait geometry
+  
 } //End Steup
 //
 void draw() {
@@ -27,6 +29,10 @@ void draw() {
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
   numPadRects();
+  //
+  image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+  image( pinePic, PineX, PineY, PineHegiht, PineWidth );
+  //image( seaPic, seaX, seaY, seaWidth, seaHeight );
 } //End Draw
 //
 void mousePressed() {

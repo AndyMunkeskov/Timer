@@ -29,16 +29,22 @@ void population() {
   printArray(x);
   printArray(y);
   //
-  backgroundX = ;
-  backgroundY = ;
-  backgroundWidth = ;
-  backgroundHeight = ;
-  PineX = ;
-  PineY = ;
-  PineHegiht = ;
-  PineWidth = ;
-  seaX = ;
-  seaY = ;
-  seaWidth = ;
-  seaHeight = ;
+  backgroundX = appWidth*1/9;
+  backgroundY = appHeight*1/7;
+  backgroundWidth = appWidth*1/9;
+  backgroundHeight = appHeight*1/10;
+  //
+  PineX = appWidth*1/6;
+  PineY = appHeight*1/8;
+  PineWidth = appWidth*1/6;
+  PineHegiht = appHeight*1/8;
+  //
+  seaX = appWidth;
+  seaY = appHeight;
+  seaWidth = appWidth;
+  seaHeight = appHeight;
+  //
+  backgroundPic = loadImage("DALLEcopy.jpg");
+  pinePic = loadImage("DALLEcopy.jpg");
+  //seaPic = loadImage();
 } //End Population
