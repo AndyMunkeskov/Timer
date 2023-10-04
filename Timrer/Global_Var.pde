@@ -11,3 +11,6 @@ String text;
 char a;
 float title, titleX, titleY, titleWidth, titleHeight;
 boolean splash = false;
+float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+float PineX, PineY, PineHegiht, PineWidth;
+float seaX, seaY, seaWidth, seaHeight;

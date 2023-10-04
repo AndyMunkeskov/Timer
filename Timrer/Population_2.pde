@@ -28,4 +28,17 @@ void population() {
   //End FOR
   printArray(x);
   printArray(y);
+  //
+  backgroundX = ;
+  backgroundY = ;
+  backgroundWidth = ;
+  backgroundHeight = ;
+  PineX = ;
+  PineY = ;
+  PineHegiht = ;
+  PineWidth = ;
+  seaX = ;
+  seaY = ;
+  seaWidth = ;
+  seaHeight = ;
 } //End Population
