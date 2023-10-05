@@ -18,3 +18,5 @@ PImage backgroundPic, pinePic, seaPic;
 Boolean nightmode, brightnessControl; //Uses tint()
 int brightnessNumber=128; //Range: 1-255
 int backgroundPicWidth, backgroundPicHeight; 
+int picWidth, picHeight, rectWidth, rectHeight;
+float aspectRatio=0.0;

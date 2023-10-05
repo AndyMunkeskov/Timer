@@ -44,7 +44,7 @@ void population() {
   seaWidth = appWidth;
   seaHeight = appHeight;
   //
-  backgroundPicWidth = ; 
-  backgroundPicHeight = ;
+  backgroundPicWidth = 2272; 
+  backgroundPicHeight = 1704;
   //seaPic = loadImage();
 } //End Population
