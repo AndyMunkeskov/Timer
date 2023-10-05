@@ -13,11 +13,11 @@ void setup () {
   //
   population(); //rect() variables
   textSetup();
+  
   background( #4411BC );
   //
-  noStroke();
-  rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  rect(PineX, PineY, PineHegiht, PineWidth); //Landscape geometry
+  
+  //rect(PineX, PineY, PineHegiht, PineWidth); //Landscape geometry
   //rect(seaX, seaY, seaWidth, seaHeight); //Portrait geometry
   
 } //End Steup
