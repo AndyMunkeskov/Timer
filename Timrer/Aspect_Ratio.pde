@@ -1,7 +1,17 @@
-/*
-void imageDraw ( PImage pic, float picX, float picY, float picWidth, float picHeight ) {
-  //image( darthPic, obiX, obiY, obiWidth, obiHeight);
+
+void imageSetup() {
+
+}// End imageSetup
+//
+void imageDraw ( PImage pic, float imageX, float imageY, float imageWidth, float imageHeight ) {
+  image( seaPic, seaX, seaY, seaWidth, seaHeight );
   //Purpose: image()
+  image(image, imageX, imageY, imageWidth, imageHeight);
+  //
+  float aspectRatio=0.0;
+  float picWidth, picHeight, rectWidth, rectHeight;
+}
+/* Calcs
   if ( picWidth >= picHeight ) { //Landscape or square
     aspectRatio = float(picHeight) / float(picWidth); //CAUTION: int to float, casting
     picWidth = rectWidth; //1:1

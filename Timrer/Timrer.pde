@@ -17,30 +17,7 @@ void setup () {
   background( #4411BC );
   //
 
-  //rect(PineX, PineY, PineHegiht, PineWidth); //Landscape geometry
-  //rect(seaX, seaY, seaWidth, seaHeight); //Portrait geometry
-  //picWidth = ;
-  //picHeight = ;
-  //rectWidth = ;
-  //rectHeight = ;
-  /*
-  if ( picWidth >= picHeight ) {
-   aspectRatio = picHeight / picWidth;
-   picWidth  = rectWidth; //1:1
-   picHeight = aspectRatio * rectWidth; //Aspect ratio, rewrite smaller dimension
-   //Error Check
-   if ( picHeight > rectHeight ) {
-   println("Problem");
-   }
-   return picHeight;
-   } else {
-   aspectRatio = picWidth / picHeight
-   //End Steup
-   if (  ) {
-   } else {
-   }
-   }
-   */
+  
 }
 
 
@@ -52,12 +29,10 @@ void draw() {
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
   numPadRects();
-  //
+//
+imageDraw();
+}//End Draw
 
-  
-  //image( seaPic, seaX, seaY, seaWidth, seaHeight );
-}
-//End Draw
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
