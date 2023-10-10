@@ -77,7 +77,6 @@ void mousePressed() {
       }
 
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
-
         String equals = "00";
         if (equals.equals("00")) {
           println("00");
