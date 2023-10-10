@@ -29,16 +29,6 @@ void population() {
   printArray(x);
   printArray(y);
   //
-  backgroundX = 0;
-  backgroundY = 0;
-  backgroundWidth = appWidth;
-  backgroundHeight = appHeight;
-  //
-  PineX = appWidth*1/6;
-  PineY = appHeight*1/8;
-  PineWidth = appWidth*1/6;
-  PineHegiht = appHeight*1/8;
-  //
   seaX = appWidth;
   seaY = appHeight;
   seaWidth = appWidth;
