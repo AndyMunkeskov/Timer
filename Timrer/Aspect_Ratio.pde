@@ -5,10 +5,17 @@ void imageSetup() {
 //
 void imageDraw ( PImage image, int imageWidth, int imageHeight, float rectX, float rectY, float rectWidth, float rectHeight ) {
   image( seaPic, seaX, seaY, seaWidth, seaHeight );
-  //Purpose: image()
-  image(image, seaX, seaY, imageWidth, imageHeight);
   //
   float aspectRatio=0.0;
+  if ( imageWidth >= imageHeight ) {
+  } else {
+    aspectRatio = float(imageWidth) / float(imageHeight); //Cast Floats from ints to avoid division by 0
+    rectHeight = imageHeight;
+    //
+  }// End if
+  //Purpose: image()
+  image(image, rectX, rectX,  rectWidth, rectHeight);
+  //
 }
 /* Calcs
   float aspectRatio=0.0;
