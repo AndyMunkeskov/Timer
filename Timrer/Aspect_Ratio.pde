@@ -11,6 +11,7 @@ void imageDraw ( PImage image, int imageWidth, int imageHeight, float rectX, flo
   } else {
     aspectRatio = float(imageWidth) / float(imageHeight); //Cast Floats from ints to avoid division by 0
     rectHeight = imageHeight;
+    rectWidth = aspectRatio*imageWidth;
     //
   }// End if
   //Purpose: image()
