@@ -21,3 +21,4 @@ int backgroundPicWidth, backgroundPicHeight;
 int picWidth, picHeight;
 float aspectRatio=0.0;
 Boolean the = false;
+int timerStart, enteredTimeSeconds, enteredTimeMilliSeconds, currentTime, countingTime;

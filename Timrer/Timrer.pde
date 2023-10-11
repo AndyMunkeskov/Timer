@@ -16,23 +16,35 @@ void setup () {
 
   background( #4411BC );
   //
-
-  
+  enteredTimeSeconds = 13; //CAUTION: will need to convert minutes and hours to seconds
+  enteredTimeMilliSeconds = enteredTimeSeconds * 1000;
+  //Last line in Setup to adjust currentTime in void draw(){}
+  timerStart = millis(); //Measure program start time called "scope"
+  println(timerStart);
 }
 
 
 void draw() {
- 
+
+
+
   if (splash) {
     background(0);
   }
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
   numPadRects();
-//
-imageDraw();
-}//End Draw
 
+  //
+  currentTime = millis();
+  countingTime = currentTime - timerStart;
+  println(timerStart, currentTime, enteredTimeMilliSeconds);
+  if ( countingTime >= enteredTimeMilliSeconds ) {
+    println("Donereno");
+    //exit(); //CAUTION: stops the entire program as a prototype
+    //use loop() & noLoop() on arrow and char R key interactions
+  }//End Draw
+}
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
@@ -84,20 +96,18 @@ void mousePressed() {
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j] && mouseY<y[j]+widthSquare ) {
         println("Button #:", i+9);
       }
-     if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
-        image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-       the = true;
-  } else {
-  //the = false;
-  //if( the ) {
-rect( 0, 0, width, height );
-  //}
-  if ( the = false ) {
-  
-  }
-  }
-  }
-  
+      if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
+       loadImage("Images/Gull_portrait_ca_usa.jpg"); 
+        the = true;
+      } //else {
+      //the = false;
+      //if( the ) {
+      //rect( 0, 0, width, height );
+      //}
+      //if ( the = false ) {
+      //}
+      //}
+    }
 } //End mousePressed
 void keyPressed( ) {
 } //End keyPressed
