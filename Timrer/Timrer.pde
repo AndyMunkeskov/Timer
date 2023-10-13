@@ -21,14 +21,16 @@ void setup () {
   //Last line in Setup to adjust currentTime in void draw(){}
   timerStart = millis(); //Measure program start time called "scope"
   println(timerStart);
+//
+  backgroundPic = loadImage("Images/Gull_portrait_ca_usa.jpg");
+  noStroke();
+  image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 }
 
 
 void draw() {
 
-
-
-  if (splash) {
+if (splash) {
     background(0);
   }
   String one="1";
@@ -97,7 +99,7 @@ void mousePressed() {
         println("Button #:", i+9);
       }
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
-       loadImage("Images/Gull_portrait_ca_usa.jpg"); 
+        image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
         //the = true;
       } //else {
       //the = false;
