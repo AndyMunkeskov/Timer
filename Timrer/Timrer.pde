@@ -98,7 +98,7 @@ void mousePressed() {
       }
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
        loadImage("Images/Gull_portrait_ca_usa.jpg"); 
-        the = true;
+        //the = true;
       } //else {
       //the = false;
       //if( the ) {
