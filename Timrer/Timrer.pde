@@ -37,7 +37,7 @@ void draw() {
   }
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
-  numPadRects();
+  
 
   //
   currentTime = millis();
@@ -102,6 +102,11 @@ void mousePressed() {
       }
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+       }
+       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
+         splash = true;
+       
+       
         //the = true;
       } //else {
       //the = false;
