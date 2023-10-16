@@ -30,14 +30,18 @@ void setup () {
 
 void draw() {
 
-   
+     
+    textSize(50); 
+    fill(#000000);
+
+    
   //
   if (splash) {
     background(0);
   }
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
-  
+  numPadRects();
 
   //
   currentTime = millis();
