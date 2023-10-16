@@ -1,6 +1,3 @@
-//Global Variables
-Boolean windowActivated = false;
-//
 void setup () {
   size(400, 700);
   display();
@@ -30,10 +27,10 @@ void setup () {
 
 void draw() {
 
-     
+    fill(#FFFFFF);
     textSize(50); 
-    fill(#000000);
-
+    text("1", widthSquare*(2*i+1)/2, widthSquare*(2*i+5)/2 );
+    
     
   //
   if (splash) {

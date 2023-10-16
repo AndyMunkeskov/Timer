@@ -22,3 +22,5 @@ int picWidth, picHeight;
 float aspectRatio=0.0;
 Boolean the = false;
 int timerStart, enteredTimeSeconds, enteredTimeMilliSeconds, currentTime, countingTime;
+Boolean windowActivated = false;
+float i, j;
