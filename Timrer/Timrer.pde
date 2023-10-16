@@ -30,7 +30,8 @@ void setup () {
 
 void draw() {
 
-    
+   
+  //
   if (splash) {
     background(0);
   }
