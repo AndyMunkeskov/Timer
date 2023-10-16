@@ -30,7 +30,8 @@ void setup () {
 
 void draw() {
 
-if (splash) {
+    
+  if (splash) {
     background(0);
   }
   String one="1";
