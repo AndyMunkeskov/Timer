@@ -27,9 +27,7 @@ void setup () {
 
 void draw() {
 
-    fill(#FFFFFF);
-    textSize(50); 
-    text("1", widthSquare*(2*i+1)/2, widthSquare*(2*i+5)/2 );
+    
     
     
   //
