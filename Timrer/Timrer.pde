@@ -39,15 +39,14 @@ void draw() {
   numPadRects();
 
   //
-  //currentTime = millis();
-  //countingTime = currentTime - timerStart;
-  //println(timerStart, currentTime, enteredTimeMilliSeconds);
-  //if ( countingTime >= enteredTimeMilliSeconds ) {
-   // println("Donereno");
+  currentTime = millis();
+  countingTime = currentTime - timerStart;
+  println(timerStart, currentTime, enteredTimeMilliSeconds);
+  if ( countingTime >= enteredTimeMilliSeconds ) {
+    println("Donereno");
     //exit(); //CAUTION: stops the entire program as a prototype
-    //use loop() & noLoop() on arrow and char R key interactions
   }//End Draw
-//}
+}
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
@@ -63,6 +62,7 @@ void mousePressed() {
         String equals = "=";
         if (equals.equals("=")) {
           println("=");
+          exit();
         }
       }
 
