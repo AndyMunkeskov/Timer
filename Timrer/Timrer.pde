@@ -39,15 +39,15 @@ void draw() {
   numPadRects();
 
   //
-  currentTime = millis();
-  countingTime = currentTime - timerStart;
-  println(timerStart, currentTime, enteredTimeMilliSeconds);
-  if ( countingTime >= enteredTimeMilliSeconds ) {
-    println("Donereno");
+  //currentTime = millis();
+  //countingTime = currentTime - timerStart;
+  //println(timerStart, currentTime, enteredTimeMilliSeconds);
+  //if ( countingTime >= enteredTimeMilliSeconds ) {
+   // println("Donereno");
     //exit(); //CAUTION: stops the entire program as a prototype
     //use loop() & noLoop() on arrow and char R key interactions
   }//End Draw
-}
+//}
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
@@ -55,7 +55,7 @@ void mousePressed() {
   //
   for (int i=0; i<1; i++)
     for (int j=0; j<1; j++) {
-      if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
+      if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
         println("Button #:", i+0);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
@@ -66,7 +66,7 @@ void mousePressed() {
         }
       }
 
-      if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
+      if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
         String equals = "00";
         if (equals.equals("00")) {
           println("00");
