@@ -62,7 +62,8 @@ void mousePressed() {
         String equals = "=";
         if (equals.equals("=")) {
           println("=");
-          exit();
+          splash = true;
+          //exit();
         }
       }
 
@@ -103,7 +104,7 @@ void mousePressed() {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
        }
        if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
-         splash = true;
+         
        
        
         //the = true;
