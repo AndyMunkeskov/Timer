@@ -38,7 +38,6 @@ void draw() {
   String one="1";
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
   numPadRects();
-
   //
   //currentTime = millis();
   //countingTime = currentTime - timerStart;
@@ -103,7 +102,7 @@ void mousePressed() {
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
        }
-       if (mouseX>0 && mouseX<0  +widthSquare/2  && mouseY>0 && mouseY<0 +heightSquare/2 ) {
+       if (mouseX>0 && mouseX<0  +widthSquare/2  && mouseY>0 && mouseY<0 +heightSquare*1.5/2) {
          exit();
        
        
