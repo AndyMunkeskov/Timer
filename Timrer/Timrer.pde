@@ -29,7 +29,8 @@ void draw() {
 
     
     
-    
+  ellipse(widthSquare/2, heightSquare/2, widthSquare/2, heightSquare/2);
+  //exit();
   //
   if (splash) {
     background(0);
@@ -39,14 +40,14 @@ void draw() {
   numPadRects();
 
   //
-  currentTime = millis();
-  countingTime = currentTime - timerStart;
-  println(timerStart, currentTime, enteredTimeMilliSeconds);
-  if ( countingTime >= enteredTimeMilliSeconds ) {
-    println("Donereno");
+  //currentTime = millis();
+  //countingTime = currentTime - timerStart;
+  //println(timerStart, currentTime, enteredTimeMilliSeconds);
+  //if ( countingTime >= enteredTimeMilliSeconds ) {
+    //println("Donereno");
     //exit(); //CAUTION: stops the entire program as a prototype
   }//End Draw
-}
+//}
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
@@ -63,7 +64,6 @@ void mousePressed() {
         if (equals.equals("=")) {
           println("=");
           splash = true;
-          //exit();
         }
       }
 
@@ -103,19 +103,11 @@ void mousePressed() {
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
        }
-       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
-         
+       if (mouseX>0 && mouseX<0  +widthSquare/2  && mouseY>0 && mouseY<0 +heightSquare/2 ) {
+         exit();
        
        
-        //the = true;
-      } //else {
-      //the = false;
-      //if( the ) {
-      //rect( 0, 0, width, height );
-      //}
-      //if ( the = false ) {
-      //}
-      //}
+       }
     }
 } //End mousePressed
 void keyPressed( ) {
