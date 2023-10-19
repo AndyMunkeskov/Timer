@@ -27,10 +27,11 @@ void setup () {
 
 void draw() {
 
-    
-    
-  ellipse(widthSquare/2, heightSquare/2, widthSquare/2, heightSquare/2);
-  //exit();
+    ellipse(widthSquare/2, heightSquare/2, widthSquare/2, heightSquare/2);
+    fill(#FFFFFF);
+    textSize(25); 
+    text("X", widthSquare/2, heightSquare/2);
+    fill(#000000);
   //
   if (splash) {
     background(0);
@@ -102,7 +103,7 @@ void mousePressed() {
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
        }
-       if (mouseX>0 && mouseX<0  +widthSquare/2  && mouseY>0 && mouseY<0 +heightSquare*1.5/2) {
+       if (mouseX>0 && mouseX<0  +widthSquare/2.5  && mouseY>0 && mouseY<0 +heightSquare/1.2) {
          exit();
        
        
