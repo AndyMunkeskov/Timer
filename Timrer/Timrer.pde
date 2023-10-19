@@ -40,14 +40,14 @@ void draw() {
   textDraw( purple, CENTER, CENTER, font, one, x[0], y[0], widthSquare, heightSquare );
   numPadRects();
   //
-  //currentTime = millis();
-  //countingTime = currentTime - timerStart;
-  //println(timerStart, currentTime, enteredTimeMilliSeconds);
-  //if ( countingTime >= enteredTimeMilliSeconds ) {
-    //println("Donereno");
+  currentTime = millis();
+  countingTime = currentTime - timerStart;
+  println(timerStart, currentTime, enteredTimeMilliSeconds);
+  if ( countingTime >= enteredTimeMilliSeconds ) {
+    println("Donereno");
     //exit(); //CAUTION: stops the entire program as a prototype
   }//End Draw
-//}
+}
 //
 void mousePressed() {
   //first mouse click, activates WINDOW
@@ -103,7 +103,7 @@ void mousePressed() {
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
        }
-       if (mouseX>0 && mouseX<0  +widthSquare/2.5  && mouseY>0 && mouseY<0 +heightSquare/1.2) {
+       if (mouseX>0  && mouseX<widthSquare/1.3  && mouseY>0 && mouseY<heightSquare/1.3) {
          exit();
        
        
