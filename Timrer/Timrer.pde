@@ -57,6 +57,10 @@ void mousePressed() {
     for (int j=0; j<1; j++) {
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
         println("Button #:", i+0);
+        noStroke();
+        fill(#FFFFFF);
+        text("0", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
 
@@ -71,34 +75,74 @@ void mousePressed() {
         String equals = "00";
         if (equals.equals("00")) {
           println("00");
+          noStroke();
+        fill(#FFFFFF);
+        text("00", 300, 200);
+        fill(#000000);
         }
       }
       if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j+2] && mouseY<y[j+2]+widthSquare ) {
         println("Button #:", i+1);
+        noStroke();
+        fill(#FFFFFF);
+        text("1", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j+2] && mouseY<y[j+2]+widthSquare ) {
         println("Button #:", i+2);
+        noStroke();
+        fill(#FFFFFF);
+        text("2", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+2] && mouseY<y[j+2]+widthSquare ) {
         println("Button #:", i+3);
+        noStroke();
+        fill(#FFFFFF);
+        text("3", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j+1] && mouseY<y[j+1]+widthSquare ) {
         println("Button #:", i+4);
+        noStroke();
+        fill(#FFFFFF);
+        text("4", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j+1] && mouseY<y[j+1]+widthSquare ) {
         println("Button #:", i+5);
+        noStroke();
+        fill(#FFFFFF);
+        text("5", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+1] && mouseY<y[j+1]+widthSquare ) {
         println("Button #:", i+6);
+        noStroke();
+        fill(#FFFFFF);
+        text("6", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j] && mouseY<y[j]+widthSquare ) {
         println("Button #:", i+7);
+        noStroke();
+        fill(#FFFFFF);
+        text("7", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j] && mouseY<y[j]+widthSquare ) {
         println("Button #:", i+8);
+        noStroke();
+        fill(#FFFFFF);
+        text("8", 300, 200);
+        fill(#000000);
       }
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j] && mouseY<y[j]+widthSquare ) {
         println("Button #:", i+9);
+        noStroke();
+        fill(#FFFFFF);
+        text("9", 300, 200);
+        fill(#000000);
       }
       if (mouseX>0 && mouseX<0  + backgroundWidth && mouseY>0 && mouseY<0 + backgroundHeight) {
         image(backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
