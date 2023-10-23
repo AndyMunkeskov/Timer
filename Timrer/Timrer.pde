@@ -32,6 +32,8 @@ void draw() {
     textSize(25); 
     text("X", widthSquare/2, heightSquare/2);
     fill(#000000);
+   //
+   line(350, 220, 50, 220);
   //
   if (splash) {
     background(0);
